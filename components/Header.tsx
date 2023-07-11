@@ -52,7 +52,7 @@ const Header = () => {
         >
           <ScrollLink
             key="Home"
-            to="home"
+            to="hero"
             spy={true}
             smooth={true}
             offset={-70}
