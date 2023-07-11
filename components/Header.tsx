@@ -12,7 +12,7 @@ import useToggle from "../hooks/useToggle";
 const NAV_ITEMS: Array<NavItem> = [
   {
     title: "Home",
-    id: "home",
+    id: "hero",
   },
   {
     title: "About",

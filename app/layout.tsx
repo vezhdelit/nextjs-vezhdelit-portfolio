@@ -2,7 +2,6 @@ import { Footer, Header, ThemeProvider } from "@/components";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
-import Head from "next/head";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -18,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="shortcut icon" href="/vez-logo-white.svg" />
-      </Head>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${raleway.className}  bg-daylight dark:bg-midnight`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />

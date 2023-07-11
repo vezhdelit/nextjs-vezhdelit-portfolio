@@ -3,17 +3,20 @@ import { LucideProps } from "lucide-react";
 const Icons = {
   logo: (props: LucideProps) => (
     <svg
-      width="36"
-      height="36"
-      viewBox="0 0 36 36"
+      width="64"
+      height="64"
+      viewBox="0 0 64 64"
       fill="black"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
-        d="M18 36H0V7.2L18 36ZM18 36H36V7.2L18 36ZM0 0L18 28.8L36 0H0Z"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0ZM44.231 40.9853L47.7665 16.2366L23.0178 19.7721L28.9454 25.6998C29.8685 25.2515 30.9048 25 31.9999 25C35.8659 25 38.9999 28.134 38.9999 32C38.9999 33.0951 38.7484 34.1315 38.3001 35.0545L44.231 40.9853ZM40.9853 44.2311L35.0544 38.3002C34.1314 38.7485 33.095 39 31.9999 39C28.1339 39 24.9999 35.866 24.9999 32C24.9999 30.9049 25.2514 29.8685 25.6997 28.9455L19.7721 23.0179L16.2366 47.7666L40.9853 44.2311Z"
         fill="fill-inherit"
       />
+      <path d="M10 10L54 54" stroke="inherit" stroke-width="5.5" />
     </svg>
   ),
   sun: (props: LucideProps) => (
