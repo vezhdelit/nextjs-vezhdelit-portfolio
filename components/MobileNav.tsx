@@ -3,10 +3,13 @@ import React from "react";
 import { MobileNavProps } from "@/types";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
+import { useLockBody } from "@/hooks/useLockBody";
 
 const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
+  useLockBody();
+
   return (
-    <div className="fixed inset-0  bg-night bg-opacity-70 top-20  z-50 p-6 shadow-lg md:hidden">
+    <div className="fixed inset-0  bg-night bg-opacity-50 top-20  z-50 p-6 shadow-lg md:hidden">
       <motion.nav
         initial={{
           x: 500,
@@ -19,7 +22,7 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
         transition={{
           duration: 0.4,
         }}
-        className="relative bg-white z-20 rounded-md p-12  shadow-md dark:bg-midnight space-y-4 "
+        className="relative bg-white z-20 rounded-md p-12  shadow-md dark:bg-midnight dark:border dark:border-white space-y-4 "
       >
         {items.map((item) => (
           <ScrollLink
@@ -29,6 +32,10 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
             smooth={true}
             offset={-70}
             duration={500}
+            activeStyle={{
+              color: "#7e22ce",
+              fontWeight: "800",
+            }}
             className="flex text-xl font-medium hover: cursor-pointer"
             onClick={toggleShowMobileMenu}
           >

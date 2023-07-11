@@ -33,9 +33,9 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 const Header = () => {
-  const [showMobileMenu, toggleShowMobileMenu] = useToggle(true);
+  const [showMobileMenu, toggleShowMobileMenu] = useToggle(false);
   return (
-    <header className="sticky top-0 p-5 w-full  z-20  shadow-lg shadow-lightshadow bg-white dark:bg-night dark:shadow-none">
+    <header className=" sticky top-0 p-5 w-full  z-20  shadow-lg shadow-lightshadow bg-white dark:bg-night dark:shadow-none">
       <nav className="md:items-center flex justify-between max-w-7xl mx-auto">
         <motion.div
           initial={{
