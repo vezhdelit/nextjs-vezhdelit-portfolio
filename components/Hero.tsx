@@ -4,9 +4,127 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div>
+    <section id="home">
       Hero
-    </div>
+      <br /> Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+      Hero
+      <br />
+    </section>
   );
 };
 export default Hero;

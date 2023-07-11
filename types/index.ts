@@ -1,8 +1,9 @@
 export interface NavItem {
   title: string;
-  page: string;
+  id: string;
 }
 
 export interface MobileNavProps {
   items: NavItem[];
+  toggleShowMobileMenu: () => void;
 }
