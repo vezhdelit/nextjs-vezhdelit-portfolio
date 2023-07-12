@@ -18,11 +18,11 @@ const Hero = () => {
           <div className="flex flex-row  justify-between mt-10">
             <CustomButton
               text="Download CV"
-              className=" text-purple-600  border-2 border-purple-600  rounded-2xl text-xl font-bold min-w-[220px] min-h-[60px] "
+              className=" text-purple-600  border-2 border-purple-600  rounded-2xl text-xl font-bold min-w-[200px] md:min-w-[220px] min-h-[60px] "
             />
             <CustomButton
               text="Contact me"
-              className=" text-white  bg-purple-600  rounded-2xl text-xl font-bold min-w-[220px] min-h-[60px] "
+              className=" text-white  bg-purple-600  rounded-2xl text-xl font-bold min-w-[200px] md:min-w-[220px]  min-h-[60px] "
             />
           </div>
         </div>
