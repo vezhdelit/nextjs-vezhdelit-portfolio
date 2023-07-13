@@ -90,7 +90,7 @@ const Header = () => {
                   to={item.id}
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-60}
                   duration={500}
                   activeClass="active"
                   className="hover:cursor-pointer"

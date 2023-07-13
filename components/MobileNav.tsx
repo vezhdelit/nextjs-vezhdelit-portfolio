@@ -22,7 +22,7 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
         transition={{
           duration: 0.4,
         }}
-        className="relative bg-white z-20 rounded-md p-12  shadow-md dark:bg-midnight dark:border dark:border-white space-y-4 "
+        className="relative bg-white z-20 rounded-md px-20 py-32  shadow-md dark:bg-midnight dark:border dark:border-white space-y-4 "
       >
         {items.map((item) => (
           <ScrollLink
@@ -30,8 +30,9 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
             to={item.id}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-60}
             duration={500}
+            activeClass="active"
             activeStyle={{
               backgroundColor: "#6366f1",
               backgroundImage: "linear-gradient(90deg, #8000FF, #53DDFC)",
@@ -39,10 +40,10 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
               WebkitTextFillColor: "transparent",
               fontWeight: "800",
             }}
-            className="flex text-xl font-medium hover: cursor-pointer"
+            className="flex text-3xl font-medium hover: cursor-pointer mx-auto justify-center "
             onClick={toggleShowMobileMenu}
           >
-            <h1 className="ml-auto"> {item.title}</h1>
+            {item.title}
           </ScrollLink>
         ))}
       </motion.nav>
