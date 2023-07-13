@@ -95,7 +95,10 @@ const Header = () => {
                   activeClass="active"
                   className="hover:cursor-pointer"
                   activeStyle={{
-                    color: "#7e22ce",
+                    backgroundColor: "#6366f1",
+                    backgroundImage: "linear-gradient(90deg, #8000FF, #53DDFC)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
                     fontWeight: "800",
                   }}
                 >

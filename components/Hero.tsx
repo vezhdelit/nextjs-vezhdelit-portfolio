@@ -62,8 +62,8 @@ const Hero = () => {
           >
             <CustomButton
               text="Download CV"
-              className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color  border-2 border-indigo-400 "
-              textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent rounded-2xl text-xl font-bold "
+              className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400 "
+              textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold "
             />
 
             <CustomButton

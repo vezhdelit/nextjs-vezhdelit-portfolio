@@ -33,7 +33,10 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
             offset={-70}
             duration={500}
             activeStyle={{
-              color: "#7e22ce",
+              backgroundColor: "#6366f1",
+              backgroundImage: "linear-gradient(90deg, #8000FF, #53DDFC)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
               fontWeight: "800",
             }}
             className="flex text-xl font-medium hover: cursor-pointer"
