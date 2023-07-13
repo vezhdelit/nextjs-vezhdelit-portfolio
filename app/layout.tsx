@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
       </head>
       <body className={`${raleway.className}  bg-daylight dark:bg-midnight`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

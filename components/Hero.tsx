@@ -24,7 +24,7 @@ const Hero = () => {
             }}
             className="text-5xl font-extrabold md:text-6xl"
           >
-            Front-End React Developer⚛️
+            Front-End React Developer👋
           </motion.h1>
           <motion.p
             initial={{
