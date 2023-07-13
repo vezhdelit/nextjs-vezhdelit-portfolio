@@ -14,6 +14,7 @@ export interface CustomButtonProps {
   isDisabled?: boolean;
   btnType?: "button" | "submit";
   className?: string;
+  textStyles?: string;
   text: string;
   rightIcon?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;

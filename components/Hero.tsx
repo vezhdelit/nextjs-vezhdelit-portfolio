@@ -62,11 +62,13 @@ const Hero = () => {
           >
             <CustomButton
               text="Download CV"
-              className=" text-purple-600  border-2 border-purple-600  rounded-2xl text-xl font-bold w-full  max-w-[220px] min-h-[60px]  "
+              className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color  border-2 border-indigo-400 "
+              textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent rounded-2xl text-xl font-bold "
             />
+
             <CustomButton
               text="Contact me"
-              className=" text-white  bg-purple-600  rounded-2xl text-xl font-bold w-full max-w-[220px] min-h-[60px] "
+              className=" bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 text-white   rounded-2xl text-xl font-bold w-full max-w-[220px] min-h-[60px] "
             />
           </motion.div>
         </div>
