@@ -55,7 +55,7 @@ const Header = () => {
             to="hero"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-60}
             duration={500}
             className="flex flex-row items-center hover:cursor-pointer "
           >
@@ -80,7 +80,7 @@ const Header = () => {
           transition={{
             duration: 0.4,
           }}
-          className="flex flex-row items-center font-semibold text-xl space-x-8"
+          className="flex flex-row items-center font-semibold text-xl space-x-8 "
         >
           <div className="hidden md:flex flex-row items-center font-semibold text-xl space-x-8">
             {NAV_ITEMS.map((item) => {
@@ -93,7 +93,7 @@ const Header = () => {
                   offset={-60}
                   duration={500}
                   activeClass="active"
-                  className="hover:cursor-pointer"
+                  className="hover:cursor-pointer hover:text-blue-500 active:translate-y-1"
                   activeStyle={{
                     backgroundColor: "#6366f1",
                     backgroundImage: "linear-gradient(90deg, #8000FF, #53DDFC)",

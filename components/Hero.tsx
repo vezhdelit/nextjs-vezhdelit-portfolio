@@ -62,13 +62,13 @@ const Hero = () => {
           >
             <CustomButton
               text="Download CV"
-              className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400 "
-              textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold "
+              className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400  group active:translate-y-1"
+              textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold"
             />
 
             <CustomButton
               text="Contact me"
-              className=" bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 text-white   rounded-2xl text-xl font-bold w-full max-w-[220px] min-h-[60px] "
+              className=" bg-gradient-to-r hover:bg-gradient-to-br  active:translate-y-1 from-purple-600 via-indigo-500 to-sky-400 text-white   rounded-2xl text-xl font-bold w-full max-w-[220px] min-h-[60px] "
             />
           </motion.div>
         </div>
@@ -91,7 +91,7 @@ const Hero = () => {
           className="max-md:w-60 max-md:h-60 mb-6 sm:my-6"
         >
           <Image
-            src="/headshot.png"
+            src="/images/headshot.png"
             alt="headshot"
             width={396}
             height={396}

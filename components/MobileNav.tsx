@@ -40,7 +40,7 @@ const MobileNav = ({ items, toggleShowMobileMenu }: MobileNavProps) => {
               WebkitTextFillColor: "transparent",
               fontWeight: "800",
             }}
-            className="flex text-3xl font-medium hover: cursor-pointer mx-auto justify-center "
+            className="flex text-3xl font-medium hover: cursor-pointer mx-auto justify-center  hover:text-blue-500 active:translate-y-1"
             onClick={toggleShowMobileMenu}
           >
             {item.title}
