@@ -42,8 +42,13 @@ const Projects = () => {
                     <div className="flex space-x-6  justify-center">
                       {project.technologies.map((tech) => {
                         return (
-                          <div className={` ${tech.bgColor} rounded-full p-2 `}>
-                            <div className="w-9 h-9">{tech.icon}</div>
+                          <div>
+                            <Image
+                              src={tech}
+                              alt="tech-logo"
+                              width={40}
+                              height={40}
+                            />
                           </div>
                         );
                       })}

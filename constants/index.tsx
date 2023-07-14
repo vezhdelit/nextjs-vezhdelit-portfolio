@@ -31,26 +31,11 @@ export const PROJECT_ITEMS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas recusandae dolores cum!",
     image: "https://i.imgur.com/0U88ud5.png",
     technologies: [
-      {
-        icon: <Icons.react className="w-9 h-9 fill-[#1CCEFF] mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
-      {
-        icon: <Icons.redux className=" w-9 h-9 fill-[#764ABC] mx-auto" />,
-        bgColor: "bg-[#EFE5FF]",
-      },
-      {
-        icon: <Icons.sass className="w-9 h-9 fill-[#CC6699] mx-auto" />,
-        bgColor: "bg-[#FFE4F2]",
-      },
-      {
-        icon: <Icons.express className="w-9 h-9 mx-auto" />,
-        bgColor: "bg-[#F2F2F2]",
-      },
-      {
-        icon: <Icons.mongoDB className="w-9 h-9 mx-auto" />,
-        bgColor: "bg-[#B0EAC0]",
-      },
+      "/technologies/react.svg",
+      "/technologies/redux.svg",
+      "/technologies/sass.svg",
+      "/technologies/express.svg",
+      "/technologies/mongodb.svg",
     ],
     link: "https://sushi-room.vercel.app/",
   },
@@ -60,24 +45,12 @@ export const PROJECT_ITEMS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas recusandae dolores cum!",
     image: "https://i.imgur.com/7Y5acJl.png",
     technologies: [
-      {
-        icon: <Icons.typecript className="w-9 h-9 mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
-      {
-        icon: <Icons.react className="w-9 h-9 fill-[#1CCEFF] mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
-      {
-        icon: <Icons.nextjs className=" w-9 h-9  mx-auto" />,
-        bgColor: "bg-[#F2F2F2]",
-      },
-      {
-        icon: <Icons.tailwind className="w-9 h-9 fill-[#38bdf8] mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
+      "/technologies/tailwind.svg",
+      "/technologies/react.svg",
+      "/technologies/typescript.svg",
+      "/technologies/nextjs.svg",
     ],
-    link: "https://sushi-room.vercel.app/",
+    link: "https://drives-hub.vercel.app/",
   },
   {
     title: "VEZHDEL.DEV",
@@ -85,23 +58,92 @@ export const PROJECT_ITEMS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas recusandae dolores cum!",
     image: "https://i.imgur.com/JZvgFE1.png",
     technologies: [
-      {
-        icon: <Icons.typecript className="w-9 h-9 mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
-      {
-        icon: <Icons.react className="w-9 h-9 fill-[#1CCEFF] mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
-      {
-        icon: <Icons.nextjs className=" w-9 h-9  mx-auto" />,
-        bgColor: "bg-[#F2F2F2]",
-      },
-      {
-        icon: <Icons.tailwind className="w-9 h-9 fill-[#38bdf8] mx-auto" />,
-        bgColor: "bg-[#E7FAFF]",
-      },
+      "/technologies/tailwind.svg",
+      "/technologies/react.svg",
+      "/technologies/typescript.svg",
+      "/technologies/nextjs.svg",
     ],
-    link: "https://sushi-room.vercel.app/",
+    link: "https://vezhdelit.vercel.app/",
+  },
+];
+
+export const SKILLS_FRONTEND = [
+  {
+    title: "HTML",
+    path: "/technologies/html.svg",
+  },
+  {
+    title: "CSS",
+    path: "/technologies/css.svg",
+  },
+  {
+    title: "JavaSctipt",
+    path: "/technologies/javascript.svg",
+  },
+  {
+    title: "TypeScript",
+    path: "/technologies/typescript.svg",
+  },
+  {
+    title: "ReactJS",
+    path: "/technologies/react.svg",
+  },
+  {
+    title: "Redux",
+    path: "/technologies/redux.svg",
+  },
+  {
+    title: "TailWind",
+    path: "/technologies/tailwind.svg",
+  },
+  {
+    title: "SCSS/SaSS",
+    path: "/technologies/sass.svg",
+  },
+];
+
+export const SKILLS_BACKEND = [
+  {
+    title: "NodeJS",
+    path: "/technologies/nodeJS.svg",
+  },
+  {
+    title: "Express",
+    path: "/technologies/express.svg",
+  },
+  {
+    title: "NextJS",
+    path: "/technologies/nextjs.svg",
+  },
+  {
+    title: "MongoDB",
+    path: "/technologies/mongoDB.svg",
+  },
+  {
+    title: "AWS",
+    path: "/technologies/aws.svg",
+  },
+];
+
+export const SKILLS_OTHER = [
+  {
+    title: "Git",
+    path: "/technologies/git.svg",
+  },
+  {
+    title: "Github",
+    path: "/technologies/github.svg",
+  },
+  {
+    title: "Illustrator",
+    path: "/technologies/ai.svg",
+  },
+  {
+    title: "Photoshop",
+    path: "/technologies/ps.svg",
+  },
+  {
+    title: "Figma",
+    path: "/technologies/figma.svg",
   },
 ];
