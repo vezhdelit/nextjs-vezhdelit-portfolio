@@ -8,29 +8,7 @@ import MobileNav from "./MobileNav";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import useToggle from "../hooks/useToggle";
-
-const NAV_ITEMS: Array<NavItem> = [
-  {
-    title: "Home",
-    id: "hero",
-  },
-  {
-    title: "About",
-    id: "about",
-  },
-  {
-    title: "Skills",
-    id: "skills",
-  },
-  {
-    title: "Projects",
-    id: "projects",
-  },
-  {
-    title: "Contacts",
-    id: "contacts",
-  },
-];
+import { NAV_ITEMS } from "@/constants";
 
 const Header = () => {
   const [showMobileMenu, toggleShowMobileMenu] = useToggle(false);

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section id="hero" className="max-w-5xl mx-auto ">
-      <div className="flex flex-col-reverse items-center  justify-between  py-8 md:flex-row md:py-32  px-5 lg:px-0">
+      <div className="flex flex-col-reverse items-center  justify-between  py-8 md:flex-row md:py-28  px-5 lg:px-0">
         <div className=" max-w-full sm:max-w-lg text-center md:text-left  space-y-6 md:space-y-8 ">
           <motion.h1
             initial={{

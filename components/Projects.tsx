@@ -1,51 +1,27 @@
 import Image from "next/image";
 import React from "react";
 import { CustomButton } from "./ui";
-import Icons from "./Icons";
-import { isEven, isOdd } from "@/utils";
+import { isEven } from "@/utils";
+import { PROJECT_ITEMS } from "@/constants";
 
-const projects = [
-  {
-    title: "SUSHI ROOM",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas expedita omnis, et dolor recusandae dolores cum!",
-    image:
-      "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1088&q=80",
-    technologies: ["react", "sass", "redux", "express"],
-    link: "https://sushi-room.vercel.app/",
-  },
-  {
-    title: "SUSHI ROOM",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas expedita omnis, et dolor recusandae dolores asperiores!",
-    image:
-      "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1088&q=80",
-    technologies: [],
-    link: "https://sushi-room.vercel.app/",
-  },
-  {
-    title: "SUSHI ROOM",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas expedita omnis, et dolor recusandae dolores asperiores!",
-    image:
-      "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1088&q=80",
-    technologies: [],
-    link: "https://sushi-room.vercel.app/",
-  },
-];
 const Projects = () => {
   return (
     <section id="projects" className="w-full bg-white dark:bg-night">
-      <div className="max-w-5xl mx-auto ">
-        <h1 className=" text-3xl font-bold ">PROJECTS</h1>
+      <div className="max-w-5xl mx-auto py-8 md:py-24 px-3 lg:px-0">
+        <h1 className="w-fit text-3xl font-bold mb-12 bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent">
+          PROJECTS
+        </h1>
+
         <div className="flex flex-col space-y-28">
-          {projects.map((project, idx) => {
+          {PROJECT_ITEMS.map((project, idx) => {
             return (
               <div key={project.title}>
                 <div
                   className={`flex ${
-                    isEven(idx) ? "md:flex-row" : "md:flex-row-reverse"
-                  } flex-col   md:flex-row md:space-x-12 items-center`}
+                    isEven(idx)
+                      ? "md:flex-row"
+                      : "md:flex-row-reverse md:space-x-reverse"
+                  } flex-col  items-center justify-center  md:space-x-6 space-y-6 `}
                 >
                   <div className="md:w-1/2">
                     <Image
@@ -56,17 +32,23 @@ const Projects = () => {
                       className=" rounded-xl shadow-xl hover:opacity-90"
                     />
                   </div>
-                  <div className="md:w-1/2 ">
-                    <h1 className=" text-3xl font-bold ">{project.title}</h1>
-                    <p className="text-gray-600 text-2xl">
+                  <div className=" md:w-1/2 space-y-2  lg:space-y-2">
+                    <h1 className=" text-3xl font-bold text-center">
+                      {project.title}
+                    </h1>
+                    <p className="text-gray-600 text-2xl text-center">
                       {project.description}
                     </p>
-                    <div className="flex max-h-11 space-x-4">
+                    <div className="flex space-x-6  justify-center">
                       {project.technologies.map((tech) => {
-                        return <div>{tech}</div>;
+                        return (
+                          <div className={` ${tech.bgColor} rounded-full p-2 `}>
+                            <div className="w-9 h-9">{tech.icon}</div>
+                          </div>
+                        );
                       })}
                     </div>
-                    <div className="flex space-x-6 justify-center md:justify-normal">
+                    <div className="flex space-x-6 justify-center  pt-8">
                       <CustomButton
                         text="Source Code"
                         className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400  group active:translate-y-1"
