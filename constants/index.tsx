@@ -36,7 +36,7 @@ export const PROJECT_ITEMS = [
         bgColor: "bg-[#E7FAFF]",
       },
       {
-        icon: <Icons.redux className=" w-8 h-8 fill-[#764ABC] mx-auto" />,
+        icon: <Icons.redux className=" w-9 h-9 fill-[#764ABC] mx-auto" />,
         bgColor: "bg-[#EFE5FF]",
       },
       {
