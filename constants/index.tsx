@@ -147,3 +147,37 @@ export const SKILLS_OTHER = [
     path: "/tech/figma.svg",
   },
 ];
+
+export const CONTACTS_ITEMS = [
+  {
+    icon: <Icons.mail className="w-7 h-7 fill-blue-600" />,
+    link: "mailto:vezhdelit@gmail.com",
+    title: "Email",
+    text: "vezhdelit@gmail.com",
+  },
+  {
+    icon: <Icons.linkedin className="w-7 h-7 fill-blue-600" />,
+    link: "www.linkedin.com/in/vezhdelit",
+    title: "LinkedIn",
+    text: "www.linkedin.com/in/vezhdelit",
+  },
+
+  {
+    icon: <Icons.mobile className="w-7 h-7 fill-blue-600" />,
+    link: "tel:+380666719894",
+    title: "Mobile",
+    text: "+380666719894",
+  },
+  {
+    icon: <Icons.github className="w-7 h-7 fill-blue-600" />,
+    link: "https://github.com/vezhdelit",
+    title: "GitHub",
+    text: "@vezhdelit",
+  },
+  {
+    icon: <Icons.telegram className="w-7 h-7 fill-blue-600" />,
+    link: "https://t.me/theCatBasilio",
+    title: "Telegram",
+    text: "@theCatBasilio",
+  },
+];
