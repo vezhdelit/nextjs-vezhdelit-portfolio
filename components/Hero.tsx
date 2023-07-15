@@ -78,7 +78,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
+                <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent  text-xl  font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
                   Download CV
                 </h4>
                 <Icons.download className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
@@ -88,7 +88,7 @@ const Hero = () => {
               size={"xl"}
               variant={"gradient"}
               active={"pressDown"}
-              className="group w-full"
+              className="group w-full hover:cursor-pointer"
               asChild
             >
               <ScrollLink
