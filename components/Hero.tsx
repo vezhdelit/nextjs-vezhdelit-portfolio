@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { CustomButton } from "./ui";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
+import { Button } from "@/components/ui/Button";
 
 const Hero = () => {
   return (
@@ -61,16 +61,26 @@ const Hero = () => {
             }}
             className="flex space-x-6 justify-center md:justify-normal"
           >
-            <CustomButton
-              text="Download CV"
-              className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400  group active:translate-y-1"
-              textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold"
-            />
-
-            <CustomButton
-              text="Contact me"
-              className=" bg-gradient-to-r hover:bg-gradient-to-br  active:translate-y-1 from-purple-600 via-indigo-500 to-sky-400 text-white   rounded-2xl text-xl font-bold w-full max-w-[220px] min-h-[60px] "
-            />
+            <Button
+              size={"xl"}
+              variant="gradientOutline"
+              active={"pressDown"}
+              className="group w-full "
+            >
+              <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
+                Download CV
+              </h4>
+              <Icons.github className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
+            </Button>
+            <Button
+              size={"xl"}
+              variant={"gradient"}
+              active={"pressDown"}
+              className="group w-full"
+            >
+              <h4 className=" text-xl font-bold">Contact me</h4>
+              <Icons.message className="hidden sm:flex ml-2 w-6 h-6" />
+            </Button>
           </motion.div>
         </div>
 

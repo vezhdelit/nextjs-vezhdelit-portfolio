@@ -1,4 +1,4 @@
-import { Footer, Header, ThemeProvider } from "@/components";
+import { Footer, Header, ThemeProvider } from "@/components/index";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";

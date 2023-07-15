@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { CustomButton } from "./ui";
 import { isEven } from "@/utils";
 import { PROJECT_ITEMS } from "@/constants";
 import { motion } from "framer-motion";
+import { Button } from "./ui/Button";
+import Icons from "./Icons";
 
 const Projects = () => {
   return (
@@ -82,16 +83,26 @@ const Projects = () => {
                       })}
                     </div>
                     <div className="flex space-x-6 justify-center  pt-8">
-                      <CustomButton
-                        text="Source Code"
-                        className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400  group active:translate-y-1"
-                        textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold"
-                      />
-
-                      <CustomButton
-                        text="Live Demo"
-                        className=" bg-gradient-to-r hover:bg-gradient-to-br  active:translate-y-1 from-purple-600 via-indigo-500 to-sky-400 text-white   rounded-2xl text-xl font-bold w-full max-w-[220px] min-h-[60px] "
-                      />
+                      <Button
+                        size={"xl"}
+                        variant="gradientOutline"
+                        active={"pressDown"}
+                        className="group w-full "
+                      >
+                        <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
+                          Code
+                        </h4>
+                        <Icons.github className=" ml-2 mb-[2px] w-5 h-5 fill-sky-400 group-hover:w-[21px] group-hover:h-[21px]" />
+                      </Button>
+                      <Button
+                        size={"xl"}
+                        variant={"gradient"}
+                        active={"pressDown"}
+                        className="group w-full"
+                      >
+                        <h4 className=" text-xl font-bold">Demo</h4>
+                        <Icons.redirect className="fill-white ml-2 w-5 h-5" />
+                      </Button>
                     </div>
                   </div>
                 </div>

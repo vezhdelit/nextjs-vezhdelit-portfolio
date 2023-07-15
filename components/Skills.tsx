@@ -48,7 +48,7 @@ function Skills({}: Props) {
                   return (
                     <div
                       key={skill.title}
-                      className=" justify-center items-center hover:cursor-pointer"
+                      className=" justify-center items-center hover:cursor-pointer hover:scale-105"
                     >
                       <div className={`flex flex-col`}>
                         <Image
@@ -56,7 +56,7 @@ function Skills({}: Props) {
                           alt={skill.title}
                           width={52}
                           height={52}
-                          className="mx-auto"
+                          className="mx-auto "
                         />
                       </div>
 
@@ -87,7 +87,7 @@ function Skills({}: Props) {
                   return (
                     <div
                       key={skill.title}
-                      className=" justify-center items-center hover:cursor-pointer"
+                      className=" justify-center items-center hover:cursor-pointer hover:scale-105"
                     >
                       <div className={`flex flex-col`}>
                         <Image
@@ -95,7 +95,7 @@ function Skills({}: Props) {
                           alt={skill.title}
                           width={52}
                           height={52}
-                          className="mx-auto"
+                          className="mx-auto "
                         />
                       </div>
 
@@ -126,7 +126,7 @@ function Skills({}: Props) {
                   return (
                     <div
                       key={skill.title}
-                      className=" justify-center items-center hover:cursor-pointer"
+                      className=" justify-center items-center hover:cursor-pointer hover:scale-105"
                     >
                       <div className={`flex flex-col`}>
                         <Image
@@ -134,7 +134,7 @@ function Skills({}: Props) {
                           alt={skill.title}
                           width={52}
                           height={52}
-                          className="mx-auto"
+                          className="mx-auto "
                         />
                       </div>
 

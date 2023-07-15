@@ -26,7 +26,7 @@ export const NAV_ITEMS: Array<NavItem> = [
 
 export const PROJECT_ITEMS = [
   {
-    title: "SUSHI ROOM",
+    title: "SUSHI ROOM🍣",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas recusandae dolores cum!",
     image: "https://i.imgur.com/0U88ud5.png",
@@ -40,7 +40,7 @@ export const PROJECT_ITEMS = [
     link: "https://sushi-room.vercel.app/",
   },
   {
-    title: "CAR HUB",
+    title: "CAR HUB🚗",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas recusandae dolores cum!",
     image: "https://i.imgur.com/7Y5acJl.png",
@@ -53,7 +53,7 @@ export const PROJECT_ITEMS = [
     link: "https://drives-hub.vercel.app/",
   },
   {
-    title: "VEZHDEL.DEV",
+    title: "VEZHDEL.DEV👨‍💻",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quas recusandae dolores cum!",
     image: "https://i.imgur.com/JZvgFE1.png",
