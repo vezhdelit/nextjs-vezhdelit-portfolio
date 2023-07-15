@@ -3,7 +3,9 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
-import { Button } from "@/components/ui/Button";
+import { Button, buttonVariants } from "@/components/ui/Button";
+
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -66,11 +68,14 @@ const Hero = () => {
               variant="gradientOutline"
               active={"pressDown"}
               className="group w-full "
+              asChild
             >
-              <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
-                Download CV
-              </h4>
-              <Icons.github className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
+              <Link href={""}>
+                <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
+                  Download CV
+                </h4>
+                <Icons.github className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
+              </Link>
             </Button>
             <Button
               size={"xl"}

@@ -40,8 +40,8 @@ const About = () => {
               delay: 0,
             }}
             variants={{
-              visible: { x: 0, opacity: 1 },
-              hidden: { x: 500, opacity: 0 },
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
             }}
             className="w-fit text-3xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent"
           >
@@ -57,8 +57,8 @@ const About = () => {
                 delay: 0.1,
               }}
               variants={{
-                visible: { x: 0, opacity: 1 },
-                hidden: { x: 500, opacity: 0 },
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 },
               }}
               className="text-gray-600 text-2xl "
             >
@@ -74,8 +74,8 @@ const About = () => {
                 delay: 0.2,
               }}
               variants={{
-                visible: { x: 0, opacity: 1 },
-                hidden: { x: 500, opacity: 0 },
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 },
               }}
               className="text-gray-600 text-2xl"
             >
