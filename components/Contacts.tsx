@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { CONTACTS_ITEMS } from "@/constants";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { CONTACTS_ITEMS } from '@/constants';
+import Image from 'next/image';
 
 const Contacts = () => {
   return (
@@ -32,13 +32,10 @@ const Contacts = () => {
                 <Link
                   href={`${contact.link}`}
                   className="rounded-full p-4 bg-white shadow-lg"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  <Image
-                    src={contact.icon}
-                    alt={contact.title}
-                    width={28}
-                    height={28}
-                  />
+                  <Image src={contact.icon} alt={contact.title} width={28} height={28} />
                 </Link>
                 <div>
                   <h1 className=" font-bold text-xl">{contact.title}</h1>

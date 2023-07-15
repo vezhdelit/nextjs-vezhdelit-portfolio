@@ -1,12 +1,12 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import Icons from "./Icons";
-import { Button, buttonVariants } from "@/components/ui/Button";
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Icons from './Icons';
+import { Button, buttonVariants } from '@/components/ui/Button';
 
-import { Link as ScrollLink } from "react-scroll";
-import Link from "next/link";
+import { Link as ScrollLink } from 'react-scroll';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -45,8 +45,7 @@ const Hero = () => {
             }}
             className="text-xl text-gray-600 dark:text-gray-300"
           >
-            Hi, I’m Vasyl. A passionate front-end developer from Uzhhgorod,
-            Ukraine.📍
+            Hi, I’m Vasyl. A passionate front-end developer from Uzhhgorod, Ukraine.📍
           </motion.p>
 
           <motion.div
@@ -65,15 +64,15 @@ const Hero = () => {
             className="flex space-x-6 justify-center md:justify-normal"
           >
             <Button
-              size={"xl"}
+              size={'xl'}
               variant="gradientOutline"
-              active={"pressDown"}
+              active={'pressDown'}
               className="group w-full "
               asChild
             >
               <Link
                 href={
-                  "https://drive.google.com/file/d/12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B/view?usp=drive_link"
+                  'https://drive.google.com/uc?id=12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B&export=download'
                 }
                 rel="noopener noreferrer"
                 target="_blank"
@@ -85,9 +84,9 @@ const Hero = () => {
               </Link>
             </Button>
             <Button
-              size={"xl"}
-              variant={"gradient"}
-              active={"pressDown"}
+              size={'xl'}
+              variant={'gradient'}
+              active={'pressDown'}
               className="group w-full hover:cursor-pointer"
               asChild
             >
