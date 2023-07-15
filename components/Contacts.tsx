@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { CONTACTS_ITEMS } from "@/constants";
+import Image from "next/image";
 
 const Contacts = () => {
   return (
@@ -30,9 +31,14 @@ const Contacts = () => {
               <div className="flex flex-row items-center space-x-3">
                 <Link
                   href={`${contact.link}`}
-                  className="rounded-full p-5 bg-white shadow-lg"
+                  className="rounded-full p-4 bg-white shadow-lg"
                 >
-                  {contact.icon}
+                  <Image
+                    src={contact.icon}
+                    alt={contact.title}
+                    width={28}
+                    height={28}
+                  />
                 </Link>
                 <div>
                   <h1 className=" font-bold text-xl">{contact.title}</h1>

@@ -4,9 +4,7 @@ import Image from "next/image";
 import { SKILLS_BACKEND, SKILLS_FRONTEND, SKILLS_OTHER } from "@/constants";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-function Skills({}: Props) {
+function Skills() {
   return (
     <section id="skills" className="w-full">
       <div className="max-w-5xl mx-auto py-8 md:py-24 px-3 lg:px-0">
