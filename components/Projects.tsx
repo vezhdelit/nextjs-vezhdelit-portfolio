@@ -1,10 +1,10 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import { CustomButton } from './ui';
-import { isEven } from '@/utils';
-import { PROJECT_ITEMS } from '@/constants';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { CustomButton } from "./ui";
+import { isEven } from "@/utils";
+import { PROJECT_ITEMS } from "@/constants";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -36,7 +36,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{
                   duration: 0.4,
-                  delay: 0.2,
+                  delay: 0,
                 }}
                 variants={{
                   visible: { y: 0, opacity: 1 },
@@ -46,7 +46,9 @@ const Projects = () => {
               >
                 <div
                   className={`flex ${
-                    isEven(idx) ? 'md:flex-row' : 'md:flex-row-reverse md:space-x-reverse'
+                    isEven(idx)
+                      ? "md:flex-row"
+                      : "md:flex-row-reverse md:space-x-reverse"
                   } flex-col  items-center justify-center  md:space-x-6 space-y-6 `}
                 >
                   <div className="md:w-1/2">
@@ -59,13 +61,22 @@ const Projects = () => {
                     />
                   </div>
                   <div className=" md:w-1/2 space-y-2  lg:space-y-2">
-                    <h1 className=" text-3xl font-bold text-center">{project.title}</h1>
-                    <p className="text-gray-600 text-2xl text-center">{project.description}</p>
+                    <h1 className=" text-3xl font-bold text-center">
+                      {project.title}
+                    </h1>
+                    <p className="text-gray-600 text-2xl text-center">
+                      {project.description}
+                    </p>
                     <div className="flex space-x-6  justify-center">
-                      {project.technologies.map((tech) => {
+                      {project.tech.map((tech) => {
                         return (
                           <div key={tech}>
-                            <Image src={tech} alt="tech-logo" width={40} height={40} />
+                            <Image
+                              src={tech}
+                              alt="tech-logo"
+                              width={40}
+                              height={40}
+                            />
                           </div>
                         );
                       })}

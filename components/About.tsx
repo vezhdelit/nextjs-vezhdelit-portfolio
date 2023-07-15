@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import React from 'react';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{
             duration: 0.4,
-            delay: 0.2,
+            delay: 0,
           }}
           variants={{
             visible: { opacity: 1, scale: 1 },
@@ -37,7 +37,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{
               duration: 0.4,
-              delay: 0.2,
+              delay: 0,
             }}
             variants={{
               visible: { x: 0, opacity: 1 },
@@ -54,7 +54,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{
                 duration: 0.4,
-                delay: 0.3,
+                delay: 0.1,
               }}
               variants={{
                 visible: { x: 0, opacity: 1 },
@@ -62,8 +62,8 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil vitae, perferendis,
-              doloribus temporibus ducimus magni amet quae
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil
+              vitae, perferendis, doloribus temporibus ducimus magni amet quae
             </motion.p>
             <motion.p
               initial="hidden"
@@ -71,7 +71,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{
                 duration: 0.4,
-                delay: 0.4,
+                delay: 0.2,
               }}
               variants={{
                 visible: { x: 0, opacity: 1 },
@@ -79,8 +79,8 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos earum a porro
-              non inventore nam nulla nemo sint.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dignissimos earum a porro non inventore nam nulla nemo sint.
             </motion.p>
           </div>
         </div>

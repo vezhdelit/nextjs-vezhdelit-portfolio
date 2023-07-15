@@ -1,8 +1,8 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import { SKILLS_BACKEND, SKILLS_FRONTEND, SKILLS_OTHER } from '@/constants';
-import { motion } from 'framer-motion';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { SKILLS_BACKEND, SKILLS_FRONTEND, SKILLS_OTHER } from "@/constants";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -23,18 +23,18 @@ function Skills({}: Props) {
               visible: { scale: 1, opacity: 1 },
               hidden: { scale: 0, opacity: 0 },
             }}
-            className="w-fit text-3xl font-bold mb-12 bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent"
+            className="w-fit text-3xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent"
           >
             SKILLS
           </motion.h1>
-          <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          <div className="mt-12 grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               transition={{
                 duration: 0.4,
-                delay: 0.1,
+                delay: 0,
               }}
               variants={{
                 visible: { y: 0, opacity: 1 },
@@ -73,7 +73,7 @@ function Skills({}: Props) {
               viewport={{ once: true }}
               transition={{
                 duration: 0.4,
-                delay: 0.2,
+                delay: 0.1,
               }}
               variants={{
                 visible: { y: 0, opacity: 1 },
@@ -112,7 +112,7 @@ function Skills({}: Props) {
               viewport={{ once: true }}
               transition={{
                 duration: 0.4,
-                delay: 0.3,
+                delay: 0.2,
               }}
               variants={{
                 visible: { y: 0, opacity: 1 },
