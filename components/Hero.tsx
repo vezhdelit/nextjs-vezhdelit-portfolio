@@ -63,7 +63,6 @@ const Hero = () => {
           >
             <CustomButton
               text="Download CV"
-              rightIcon={<Icons.download />}
               className=" w-full max-w-[220px] min-h-[60px] rounded-2xl gradient-color   border-2 border-indigo-400  group active:translate-y-1"
               textStyles="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold"
             />
