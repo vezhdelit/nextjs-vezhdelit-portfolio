@@ -1,21 +1,49 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { CustomButton } from './ui';
 import { isEven } from '@/utils';
 import { PROJECT_ITEMS } from '@/constants';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
     <section id="projects" className="w-full bg-white dark:bg-night">
       <div className="max-w-5xl mx-auto py-8 md:py-24 px-3 lg:px-0">
-        <h1 className="w-fit text-3xl font-bold mb-12 bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.4,
+            delay: 0.2,
+          }}
+          variants={{
+            visible: { scale: 1, opacity: 1 },
+            hidden: { scale: 0, opacity: 0 },
+          }}
+          className="w-fit text-3xl font-bold mb-12 bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent"
+        >
           PROJECTS
-        </h1>
+        </motion.h1>
 
         <div className="flex flex-col space-y-28">
           {PROJECT_ITEMS.map((project, idx) => {
             return (
-              <div key={project.title}>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                }}
+                variants={{
+                  visible: { y: 0, opacity: 1 },
+                  hidden: { y: 500, opacity: 0 },
+                }}
+                key={project.title}
+              >
                 <div
                   className={`flex ${
                     isEven(idx) ? 'md:flex-row' : 'md:flex-row-reverse md:space-x-reverse'
@@ -56,7 +84,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

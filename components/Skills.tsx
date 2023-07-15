@@ -1,7 +1,8 @@
-import React from "react";
-import Icons from "./Icons";
-import Image from "next/image";
-import { SKILLS_BACKEND, SKILLS_FRONTEND, SKILLS_OTHER } from "@/constants";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import { SKILLS_BACKEND, SKILLS_FRONTEND, SKILLS_OTHER } from '@/constants';
+import { motion } from 'framer-motion';
 
 type Props = {};
 
@@ -10,11 +11,37 @@ function Skills({}: Props) {
     <section id="skills" className="w-full">
       <div className="max-w-5xl mx-auto py-8 md:py-24 px-3 lg:px-0">
         <div className="flex flex-col">
-          <h1 className="w-fit text-3xl font-bold mb-12 bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent">
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.4,
+              delay: 0.2,
+            }}
+            variants={{
+              visible: { scale: 1, opacity: 1 },
+              hidden: { scale: 0, opacity: 0 },
+            }}
+            className="w-fit text-3xl font-bold mb-12 bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent"
+          >
             SKILLS
-          </h1>
+          </motion.h1>
           <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            <div className=" bg-white dark:bg-night rounded-xl shadow-md p-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.4,
+                delay: 0.1,
+              }}
+              variants={{
+                visible: { y: 0, opacity: 1 },
+                hidden: { y: 500, opacity: 0 },
+              }}
+              className=" bg-white dark:bg-night rounded-xl shadow-md p-4"
+            >
               <h2 className="text-center  text-2xl font-bold m-4">Front-End</h2>
               <div className="grid grid-cols-2 gap-5 mx-auto p-4">
                 {SKILLS_FRONTEND.map((skill) => {
@@ -38,9 +65,22 @@ function Skills({}: Props) {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
 
-            <div className=" bg-white dark:bg-night rounded-xl shadow-md p-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.4,
+                delay: 0.2,
+              }}
+              variants={{
+                visible: { y: 0, opacity: 1 },
+                hidden: { y: 500, opacity: 0 },
+              }}
+              className=" bg-white dark:bg-night rounded-xl shadow-md p-4"
+            >
               <h2 className="text-center  text-2xl font-bold m-4">Back-End</h2>
               <div className="grid grid-cols-2 gap-5 mx-auto p-4">
                 {SKILLS_BACKEND.map((skill) => {
@@ -64,9 +104,22 @@ function Skills({}: Props) {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
 
-            <div className=" bg-white dark:bg-night rounded-xl shadow-md p-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.4,
+                delay: 0.3,
+              }}
+              variants={{
+                visible: { y: 0, opacity: 1 },
+                hidden: { y: 500, opacity: 0 },
+              }}
+              className=" bg-white dark:bg-night rounded-xl shadow-md p-4"
+            >
               <h2 className="text-center  text-2xl font-bold m-4">Other</h2>
               <div className="grid grid-cols-2 gap-5 mx-auto p-4">
                 {SKILLS_OTHER.map((skill) => {
@@ -90,7 +143,7 @@ function Skills({}: Props) {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
