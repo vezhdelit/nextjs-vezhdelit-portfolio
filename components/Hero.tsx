@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Icons from "./Icons";
 import { Button, buttonVariants } from "@/components/ui/Button";
 
+import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 
 const Hero = () => {
@@ -70,11 +71,17 @@ const Hero = () => {
               className="group w-full "
               asChild
             >
-              <Link href={""}>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B/view?usp=drive_link"
+                }
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
                   Download CV
                 </h4>
-                <Icons.github className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
+                <Icons.download className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
               </Link>
             </Button>
             <Button
@@ -82,9 +89,19 @@ const Hero = () => {
               variant={"gradient"}
               active={"pressDown"}
               className="group w-full"
+              asChild
             >
-              <h4 className=" text-xl font-bold">Contact me</h4>
-              <Icons.message className="hidden sm:flex ml-2 w-6 h-6" />
+              <ScrollLink
+                key="Contacts"
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={-400}
+                duration={2000}
+              >
+                <h4 className=" text-xl font-bold">Contact me</h4>
+                <Icons.message className="hidden sm:flex ml-2 w-6 h-6" />
+              </ScrollLink>
             </Button>
           </motion.div>
         </div>

@@ -1,9 +1,7 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import Icons from "./Icons";
-import { NavItem } from "@/types";
 import MobileNav from "./MobileNav";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
