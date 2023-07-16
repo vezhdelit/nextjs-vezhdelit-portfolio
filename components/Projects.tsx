@@ -42,7 +42,7 @@ const Projects = () => {
                 }}
                 variants={{
                   visible: { y: 0, opacity: 1 },
-                  hidden: { y: 500, opacity: 0 },
+                  hidden: { y: 300, opacity: 0 },
                 }}
                 key={project.title}
               >

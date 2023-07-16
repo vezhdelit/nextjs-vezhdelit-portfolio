@@ -1,12 +1,12 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import { motion } from 'framer-motion';
-import Icons from './Icons';
-import { Button } from '@/components/ui/Button';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
+import Icons from "./Icons";
+import { Button } from "@/components/ui/Button";
 
-import { Link as ScrollLink } from 'react-scroll';
-import Link from 'next/link';
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
               opacity: 1,
             }}
             transition={{
-              duration: 0.4,
+              duration: 0.5,
               delay: 0.2,
             }}
             className="text-5xl font-extrabold md:text-6xl"
@@ -40,12 +40,13 @@ const Hero = () => {
               opacity: 1,
             }}
             transition={{
-              duration: 0.4,
+              duration: 0.5,
               delay: 0.1,
             }}
             className="text-xl text-gray-600 dark:text-gray-300"
           >
-            Hi, I’m Vasyl. A passionate front-end developer from Uzhhgorod, Ukraine.📍
+            Hi, I’m Vasyl. A passionate front-end developer from Uzhhgorod,
+            Ukraine.📍
           </motion.p>
 
           <motion.div
@@ -58,21 +59,21 @@ const Hero = () => {
               opacity: 1,
             }}
             transition={{
-              duration: 0.4,
+              duration: 0.5,
               delay: 0,
             }}
             className="flex space-x-6 justify-center md:justify-normal"
           >
             <Button
-              size={'xl'}
+              size={"xl"}
               variant="gradientOutline"
-              active={'pressDown'}
+              active={"pressDown"}
               className="group w-full "
               asChild
             >
               <Link
                 href={
-                  'https://drive.google.com/uc?id=12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B&export=download'
+                  "https://drive.google.com/uc?id=12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B&export=download"
                 }
                 rel="noopener noreferrer"
                 target="_blank"
@@ -84,9 +85,9 @@ const Hero = () => {
               </Link>
             </Button>
             <Button
-              size={'xl'}
-              variant={'gradient'}
-              active={'pressDown'}
+              size={"xl"}
+              variant={"gradient"}
+              active={"pressDown"}
               className="group w-full hover:cursor-pointer"
               asChild
             >
@@ -117,7 +118,7 @@ const Hero = () => {
             opacity: 1,
           }}
           transition={{
-            duration: 0.4,
+            duration: 0.5,
             delay: 0,
           }}
           className="max-md:w-60 max-md:h-60 mb-6 sm:my-6"

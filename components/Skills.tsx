@@ -14,7 +14,7 @@ function Skills() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{
-              duration: 0.4,
+              duration: 0.5,
               delay: 0.2,
             }}
             variants={{
@@ -31,12 +31,12 @@ function Skills() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{
-                duration: 0.4,
+                duration: 0.5,
                 delay: 0,
               }}
               variants={{
                 visible: { y: 0, opacity: 1 },
-                hidden: { y: 500, opacity: 0 },
+                hidden: { y: 350, opacity: 0 },
               }}
               className=" bg-white dark:bg-night rounded-xl shadow-md p-4"
             >
@@ -70,12 +70,12 @@ function Skills() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{
-                duration: 0.4,
-                delay: 0.1,
+                duration: 0.5,
+                delay: 0.2,
               }}
               variants={{
                 visible: { y: 0, opacity: 1 },
-                hidden: { y: 500, opacity: 0 },
+                hidden: { y: 350, opacity: 0 },
               }}
               className=" bg-white dark:bg-night rounded-xl shadow-md p-4"
             >
@@ -109,12 +109,12 @@ function Skills() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{
-                duration: 0.4,
-                delay: 0.2,
+                duration: 0.5,
+                delay: 0.4,
               }}
               variants={{
                 visible: { y: 0, opacity: 1 },
-                hidden: { y: 500, opacity: 0 },
+                hidden: { y: 350, opacity: 0 },
               }}
               className=" bg-white dark:bg-night rounded-xl shadow-md p-4"
             >
