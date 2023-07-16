@@ -29,25 +29,53 @@ const Contacts = () => {
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-5 mx-auto sm:mx-2 ">
             {CONTACTS_ITEMS.map((contact) => (
               <div className="flex flex-row items-center space-x-3">
-                <Link
-                  href={`${contact.link}`}
-                  className="rounded-full p-4 bg-white shadow-lg"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.2,
+                  }}
+                  variants={{
+                    visible: { scale: 1, opacity: 1 },
+                    hidden: { scale: 0, opacity: 0 },
+                  }}
+                  className="flex"
                 >
-                  <Image
-                    src={contact.icon}
-                    alt={contact.title}
-                    width={28}
-                    height={28}
-                  />
-                </Link>
-                <div>
+                  <Link
+                    href={`${contact.link}`}
+                    className="rounded-full p-4 bg-white shadow-lg"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Image
+                      src={contact.icon}
+                      alt={contact.title}
+                      width={28}
+                      height={28}
+                    />
+                  </Link>
+                </motion.div>
+
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.2,
+                  }}
+                  variants={{
+                    visible: { x: 0, opacity: 1 },
+                    hidden: { x: -50, opacity: 0 },
+                  }}
+                >
                   <h1 className=" font-bold text-xl">{contact.title}</h1>
                   <Link href={`${contact.link}`} className=" text-gray-500">
                     {contact.text}
                   </Link>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>
