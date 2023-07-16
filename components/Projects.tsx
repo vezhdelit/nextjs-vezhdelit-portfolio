@@ -1,12 +1,12 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import { isEven } from '@/utils';
-import { PROJECT_ITEMS } from '@/constants';
-import { motion } from 'framer-motion';
-import { Button } from './ui/Button';
-import Icons from './Icons';
-import Link from 'next/link';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { isEven } from "@/utils";
+import { PROJECT_ITEMS } from "@/constants";
+import { motion } from "framer-motion";
+import { Button } from "./ui/Button";
+import Icons from "./Icons";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -48,7 +48,9 @@ const Projects = () => {
               >
                 <div
                   className={`flex ${
-                    isEven(idx) ? 'md:flex-row' : 'md:flex-row-reverse md:space-x-reverse'
+                    isEven(idx)
+                      ? "md:flex-row"
+                      : "md:flex-row-reverse md:space-x-reverse"
                   } flex-col  items-center justify-center  md:space-x-6 space-y-6 `}
                 >
                   <div className="md:w-1/2">
@@ -61,28 +63,39 @@ const Projects = () => {
                     />
                   </div>
                   <div className=" md:w-1/2 space-y-2  lg:space-y-2">
-                    <h1 className=" text-3xl font-bold text-center">{project.title}</h1>
-                    <p className="text-gray-600 text-2xl text-center">{project.description}</p>
+                    <h1 className=" text-3xl font-bold text-center">
+                      {project.title}
+                    </h1>
+                    <p className="text-gray-600 text-2xl text-center">
+                      {project.description}
+                    </p>
                     <div className="flex space-x-6  justify-center">
                       {project.tech.map((tech) => {
                         return (
                           <div key={tech}>
-                            <Image src={tech} alt="tech-logo" width={40} height={40} />
+                            <Image
+                              src={tech}
+                              alt="tech-logo"
+                              width={40}
+                              height={40}
+                            />
                           </div>
                         );
                       })}
                     </div>
                     <div className="flex space-x-6 justify-center  pt-8">
                       <Button
-                        size={'xl'}
+                        size={"xl"}
                         variant="gradientOutline"
-                        active={'pressDown'}
+                        active={"pressDown"}
                         className="group w-full "
-                        rel="noopener noreferrer"
-                        target="_blank"
                         asChild
                       >
-                        <Link href={`${project.codeLink}`}>
+                        <Link
+                          href={`${project.codeLink}`}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent text-xl font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
                             Code
                           </h4>
@@ -90,15 +103,17 @@ const Projects = () => {
                         </Link>
                       </Button>
                       <Button
-                        size={'xl'}
-                        variant={'gradient'}
-                        active={'pressDown'}
+                        size={"xl"}
+                        variant={"gradient"}
+                        active={"pressDown"}
                         className="group w-full"
-                        rel="noopener noreferrer"
-                        target="_blank"
                         asChild
                       >
-                        <Link href={`${project.link}`}>
+                        <Link
+                          href={`${project.link}`}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           <h4 className=" text-xl font-bold">Demo</h4>
                           <Icons.redirect className="fill-white ml-2 w-5 h-5" />
                         </Link>
