@@ -28,7 +28,10 @@ const Contacts = () => {
           </motion.h1>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-5 mx-auto sm:mx-2 ">
             {CONTACTS_ITEMS.map((contact) => (
-              <div className="flex flex-row items-center space-x-3">
+              <div
+                key={contact.title}
+                className="flex flex-row items-center space-x-3"
+              >
                 <motion.div
                   initial="hidden"
                   whileInView="visible"

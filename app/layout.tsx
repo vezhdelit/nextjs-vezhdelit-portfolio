@@ -6,7 +6,7 @@ import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vezhdel.Dev",
+  title: "vezhdelit",
   description: "Personal portfolio site of Web Developer Vasyl Vezhdel",
 };
 

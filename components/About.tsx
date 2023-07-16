@@ -14,7 +14,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{
             duration: 0.5,
-            delay: 0,
+            delay: 0.1,
           }}
           variants={{
             visible: { opacity: 1, scale: 1 },
@@ -37,7 +37,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{
               duration: 0.5,
-              delay: 0,
+              delay: 0.1,
             }}
             variants={{
               visible: { opacity: 1 },
@@ -54,7 +54,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{
                 duration: 0.5,
-                delay: 0.1,
+                delay: 0.2,
               }}
               variants={{
                 visible: { opacity: 1 },

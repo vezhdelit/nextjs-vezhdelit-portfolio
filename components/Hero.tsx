@@ -75,8 +75,6 @@ const Hero = () => {
                 href={
                   "https://drive.google.com/uc?id=12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B&export=download"
                 }
-                rel="noopener noreferrer"
-                target="_blank"
               >
                 <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent  text-xl  font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
                   Download CV
