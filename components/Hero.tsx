@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Icons from './Icons';
-import { Button, buttonVariants } from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 
 import { Link as ScrollLink } from 'react-scroll';
 import Link from 'next/link';
@@ -95,7 +95,7 @@ const Hero = () => {
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={1000}
               >
                 <h4 className=" text-xl font-bold">Contact me</h4>
