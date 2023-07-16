@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import ThemeSwitch from "./ThemeSwitch";
-import Icons from "./Icons";
-import MobileNav from "./MobileNav";
-import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
-import useToggle from "../hooks/useToggle";
-import { NAV_ITEMS } from "@/constants";
+'use client';
+import React from 'react';
+import ThemeSwitch from './ThemeSwitch';
+import Icons from './Icons';
+import MobileNav from './MobileNav';
+import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
+import useToggle from '../hooks/useToggle';
+import { NAV_ITEMS } from '@/constants';
 
 const Header = () => {
   const [showMobileMenu, toggleShowMobileMenu] = useToggle(false);
@@ -59,23 +59,23 @@ const Header = () => {
           className="flex flex-row items-center font-semibold text-xl space-x-8 "
         >
           <div className="hidden md:flex flex-row items-center font-semibold text-xl space-x-8">
-            {NAV_ITEMS.map((item) => {
+            {NAV_ITEMS.map((item, idx) => {
               return (
                 <ScrollLink
                   key={item.title}
                   to={item.id}
                   spy={true}
                   smooth={true}
-                  offset={-60}
-                  duration={500}
+                  offset={0}
+                  duration={1000}
                   activeClass="active"
                   className="hover:cursor-pointer hover:text-blue-500 active:translate-y-1"
                   activeStyle={{
-                    backgroundColor: "#6366f1",
-                    backgroundImage: "linear-gradient(90deg, #8000FF, #53DDFC)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    fontWeight: "800",
+                    backgroundColor: '#6366f1',
+                    backgroundImage: 'linear-gradient(90deg, #8000FF, #53DDFC)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    fontWeight: '800',
                   }}
                 >
                   {item.title}
@@ -85,10 +85,7 @@ const Header = () => {
           </div>
           <div className="flex flex-row items-center font-semibold text-xl space-x-4">
             <ThemeSwitch />
-            <button
-              className="bg-zinc-100 p-2 rounded-xl md:hidden"
-              onClick={toggleShowMobileMenu}
-            >
+            <button className="bg-zinc-100 p-2 rounded-xl md:hidden" onClick={toggleShowMobileMenu}>
               {showMobileMenu ? (
                 <Icons.close className="stroke-black w-38 h-38" />
               ) : (
@@ -99,10 +96,7 @@ const Header = () => {
         </motion.div>
 
         {showMobileMenu && (
-          <MobileNav
-            items={NAV_ITEMS}
-            toggleShowMobileMenu={toggleShowMobileMenu}
-          />
+          <MobileNav items={NAV_ITEMS} toggleShowMobileMenu={toggleShowMobileMenu} />
         )}
       </nav>
     </header>

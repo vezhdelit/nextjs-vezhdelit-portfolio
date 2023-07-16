@@ -95,8 +95,8 @@ const Hero = () => {
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={-400}
-                duration={2000}
+                offset={0}
+                duration={1000}
               >
                 <h4 className=" text-xl font-bold">Contact me</h4>
                 <Icons.message className="hidden sm:flex ml-2 w-6 h-6" />
