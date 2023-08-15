@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
