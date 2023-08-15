@@ -53,7 +53,7 @@ const Projects = () => {
                       : "md:flex-row-reverse md:space-x-reverse"
                   } flex-col  items-center justify-center  md:space-x-6 space-y-6 `}
                 >
-                  <div className="md:w-1/2">
+                  <Link href={project.link} className="md:w-1/2">
                     <Image
                       src={project.image}
                       alt=""
@@ -61,7 +61,7 @@ const Projects = () => {
                       height={500}
                       className=" rounded-xl shadow-xl hover:opacity-90"
                     />
-                  </div>
+                  </Link>
                   <div className=" md:w-1/2 space-y-2  lg:space-y-2">
                     <h1 className=" text-3xl font-bold text-center">
                       {project.title}
