@@ -4,7 +4,7 @@ import React from "react";
 import { isEven } from "@/utils";
 import { PROJECT_ITEMS } from "@/constants";
 import { motion } from "framer-motion";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button";
 import Icons from "./Icons";
 import Link from "next/link";
 

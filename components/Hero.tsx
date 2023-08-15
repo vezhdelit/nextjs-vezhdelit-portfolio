@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
@@ -71,16 +71,12 @@ const Hero = () => {
               className="group w-full "
               asChild
             >
-              <Link
-                href={
-                  "https://drive.google.com/uc?id=12A3a-WwAKPjbW7N3t4fu_udzlWLTMf-B&export=download"
-                }
-              >
+              <a href={"/assets/CV_Vezhdel_ReactDev.pdf"} download>
                 <h4 className="bg-gradient-to-r from-purple-600 via-indigo-500 to-sky-400 bg-clip-text text-transparent  text-xl  font-bold group-hover:bg-gradient-to-br group-hover:font-extrabold">
                   Download CV
                 </h4>
                 <Icons.download className="hidden sm:flex ml-2 mb-[2px] w-5 h-5 fill-sky-500 group-hover:w-[21px] group-hover:h-[21px]" />
-              </Link>
+              </a>
             </Button>
             <Button
               size={"xl"}

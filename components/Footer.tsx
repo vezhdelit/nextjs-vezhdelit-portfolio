@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type Props = {};
 
@@ -9,7 +9,9 @@ const Footer = (props: Props) => {
         <h1 className="text-white text-lg text-center">
           Copyright © 2023. All rights are reserved
         </h1>
-        <h1 className="text-white text-lg text-center">Developed by Vasyl Vezhdel</h1>
+        <h1 className="text-white text-lg text-center">
+          Developed by Vasyl Vezhdel
+        </h1>
       </div>
     </footer>
   );
