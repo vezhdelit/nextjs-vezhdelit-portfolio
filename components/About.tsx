@@ -62,10 +62,8 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl "
             >
-              I am a skilled React frontend developer actively pursuing
-              opportunities in web development. With a solid foundation in
-              crafting intuitive user interfaces, I'm driven to enhance digital
-              experiences.
+              I am Vezhdel Vasyl a skilled React frontend developer actively
+              pursuing opportunities in web development.
             </motion.p>
             <motion.p
               initial="hidden"
@@ -81,9 +79,8 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl"
             >
-              Committed to joining a dynamic team, I aim to contribute my
-              expertise in creating seamless and visually appealing web
-              applications.
+              With a solid foundation in crafting intuitive user interfaces, I'm
+              driven to enhance digital experiences.
             </motion.p>
           </div>
         </div>
