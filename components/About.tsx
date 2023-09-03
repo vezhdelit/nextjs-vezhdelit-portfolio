@@ -62,8 +62,10 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil
-              vitae, perferendis, doloribus temporibus ducimus magni amet quae
+              I am a skilled React frontend developer actively pursuing
+              opportunities in web development. With a solid foundation in
+              crafting intuitive user interfaces, I'm driven to enhance digital
+              experiences.
             </motion.p>
             <motion.p
               initial="hidden"
@@ -79,8 +81,9 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos earum a porro non inventore nam nulla nemo sint.
+              Committed to joining a dynamic team, I aim to contribute my
+              expertise in creating seamless and visually appealing web
+              applications.
             </motion.p>
           </div>
         </div>
