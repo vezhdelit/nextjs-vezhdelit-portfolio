@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -62,8 +62,8 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl "
             >
-              I am Vezhdel Vasyl a skilled React frontend developer actively
-              pursuing opportunities in web development.
+              Recent university graduate with background in web development. Excellent focus,
+              communication, and ability to learn rapidly.
             </motion.p>
             <motion.p
               initial="hidden"
@@ -79,8 +79,7 @@ const About = () => {
               }}
               className="text-gray-600 text-2xl"
             >
-              With a solid foundation in crafting intuitive user interfaces, I'm
-              driven to enhance digital experiences.
+              Excels working in a team environment. Strong critical analysis and problem solving.
             </motion.p>
           </div>
         </div>
