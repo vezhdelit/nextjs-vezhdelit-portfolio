@@ -46,12 +46,11 @@ const Contacts = () => {
                   }}
                   className="flex"
                 >
-                  <a
+                  <Link
                     href={`${contact.link}`}
                     className="rounded-full p-4 bg-white shadow-lg"
-                    onClick={(e) => {
-                      e.preventDefault();
-                    }}
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <Image
                       src={contact.icon}
@@ -59,7 +58,7 @@ const Contacts = () => {
                       width={28}
                       height={28}
                     />
-                  </a>
+                  </Link>
                 </motion.div>
 
                 <motion.div
