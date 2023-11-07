@@ -46,7 +46,7 @@ const Contacts = () => {
                   }}
                   className="flex"
                 >
-                  <Link
+                  <a
                     href={`${contact.link}`}
                     className="rounded-full p-4 bg-white shadow-lg"
                   >
@@ -56,7 +56,7 @@ const Contacts = () => {
                       width={28}
                       height={28}
                     />
-                  </Link>
+                  </a>
                 </motion.div>
 
                 <motion.div
