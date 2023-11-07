@@ -49,6 +49,9 @@ const Contacts = () => {
                   <a
                     href={`${contact.link}`}
                     className="rounded-full p-4 bg-white shadow-lg"
+                    onClick={(e) => {
+                      e.preventDefault();
+                    }}
                   >
                     <Image
                       src={contact.icon}
