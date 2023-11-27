@@ -2,6 +2,7 @@ import { Footer, Header, ThemeProvider } from "@/components/index";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
